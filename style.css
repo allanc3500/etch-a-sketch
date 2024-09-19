@@ -14,8 +14,8 @@ body{
 .square {
     height: 20px;
     width: 20px;
+    box-sizing: border-box; /*Very important when borders are involved*/
     border: 1px solid black;
-    margin: 0px;
     background-color: aqua;
 }
 

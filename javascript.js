@@ -8,7 +8,9 @@ function createGrid (number){
                 const div = document.createElement("div");
                 /*div.textContent = "Hi";*/
                 div.className = "square";
-                let squareSize = 960/number + "px";
+                let squareSize = (960 / number).toFixed(5);
+                console.log(squareSize);
+                squareSize = squareSize + "px";
                 div.style.height= squareSize;
                 div.style.width= squareSize;
                 divRow.appendChild(div);
